@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack-and-Go</title>
+    <link rel="icon" href="./images/fav-icon.png" type="image/icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Navbar part start -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img class="img-fluid" src="images/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i data-feather="align-left"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto ">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Booking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+            <div class="nav_btn">
+                <a href="#">Book Now</a>                                                     
+            </div>
+        </div>
+      </nav>
+    <!-- Navbar part end -->
+
+
+    <!-- banner part start -->
+    <section id="banner">
+        <div class="overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="banner_info">
+                            <h1>Start Exploring to Find Inner Peace by Traveling</h1>
+                            <p>Lost yourself with Vacation and Travel into the place that you never visit before. We have thousand places in our database for you.</p>
+                            <a class="btn btn-info" href="#">Discover Now</a>
+                            <div class="search_box">
+                              <!-- 01 -->
+                                <div class="item">
+                                  <div class="icon">
+                                    <i data-feather="map-pin"></i>
+                                  </div>
+                                  <div class="search">
+                                    <select name="loaction" id="loaction">
+                                      <option selected>Location</option>
+                                      <option value="dhaka">Dhaka</option>
+                                      <option value="faka">faka</option>
+                                      <option value="bogura">Bogura</option>
+                                    </select>
+                                    <input type="text" placeholder="select your location">
+                                  </div>
+                                </div>
+                                <!-- 02 -->
+                                <div class="item">
+                                  <div class="icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M6 5V1M14 5V1M5 9H15M5 13H15M3 19H17C17.5304 19 18.0391 18.7893 18.4142 18.4142C18.7893 18.0391 19 17.5304 19 17V5C19 4.46957 18.7893 3.96086 18.4142 3.58579C18.0391 3.21071 17.5304 3 17 3H3C2.46957 3 1.96086 3.21071 1.58579 3.58579C1.21071 3.96086 1 4.46957 1 5V17C1 17.5304 1.21071 18.0391 1.58579 18.4142C1.96086 18.7893 2.46957 19 3 19Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </div>
+                                  <div class="search">
+                                    <select name="loaction" id="loaction">
+                                      <option selected>Location</option>
+                                      <option value="dhaka">Dhaka</option>
+                                      <option value="faka">faka</option>
+                                      <option value="bogura">Bogura</option>
+                                    </select>
+                                    <input type="text" placeholder="select your location">
+                                  </div>
+                                </div>
+                                <!-- 03 -->
+                                <div class="item">
+                                  <div class="icon">
+                                    <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M12 5C12 6.06087 11.5786 7.07828 10.8284 7.82843C10.0783 8.57857 9.06087 9 8 9C6.93913 9 5.92172 8.57857 5.17157 7.82843C4.42143 7.07828 4 6.06087 4 5C4 3.93913 4.42143 2.92172 5.17157 2.17157C5.92172 1.42143 6.93913 1 8 1C9.06087 1 10.0783 1.42143 10.8284 2.17157C11.5786 2.92172 12 3.93913 12 5V5ZM8 12C6.14348 12 4.36301 12.7375 3.05025 14.0503C1.7375 15.363 1 17.1435 1 19H15C15 17.1435 14.2625 15.363 12.9497 14.0503C11.637 12.7375 9.85652 12 8 12V12Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                      </svg>
+                                  </div>
+                                  <div class="search">
+                                    <select name="loaction" id="loaction">
+                                      <option selected>Location</option>
+                                      <option value="dhaka">Dhaka</option>
+                                      <option value="faka">faka</option>
+                                      <option value="bogura">Bogura</option>
+                                    </select>
+                                    <input type="text" placeholder="select your location">
+                                  </div>
+                                </div>
+                                <!-- 04 button -->
+                                <div class="item justify-content-end">
+                                  <button>
+                                    <i data-feather="search"></i>
+                                  </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part end -->
+
+    <!-- Travel Benefit part start -->
+    <section id="travel_benefit">
+      <div class="container">
+        <div class="common_heading">
+          <h2>Travel Benefit For User</h2>
+          <p>We are self-service data analytics software that lets you create visually appealing data visualizations and insightful dashboards in minutes.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-lg-4">
+            <div class="benefit_item">
+              <div class="icon">
+                <img src="images/Benefit-1.png" alt="icon">
+              </div>
+              <div class="info">
+                <h3>Cheap than Other</h3>
+                <p>Travelya is cheaper than other travel agency.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="benefit_item">
+              <div class="icon">
+                <img src="images/Benefit-1.png" alt="icon">
+              </div>
+              <div class="info">
+                <h3>Cheap than Other</h3>
+                <p>Travelya is cheaper than other travel agency.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="benefit_item">
+              <div class="icon">
+                <img src="images/Benefit-1.png" alt="icon">
+              </div>
+              <div class="info">
+                <h3>Cheap than Other</h3>
+                <p>Travelya is cheaper than other travel agency.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="benefit_item">
+              <div class="icon">
+                <img src="images/Benefit-1.png" alt="icon">
+              </div>
+              <div class="info">
+                <h3>Cheap than Other</h3>
+                <p>Travelya is cheaper than other travel agency.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="benefit_item">
+              <div class="icon">
+                <img src="images/Benefit-1.png" alt="icon">
+              </div>
+              <div class="info">
+                <h3>Cheap than Other</h3>
+                <p>Travelya is cheaper than other travel agency.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <div class="benefit_item">
+              <div class="icon">
+                <img src="images/Benefit-1.png" alt="icon">
+              </div>
+              <div class="info">
+                <h3>Cheap than Other</h3>
+                <p>Travelya is cheaper than other travel agency.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Travel Benefit part end -->
+
+    <!-- Popular part start -->
+    <section id="popular">
+      <div class="common_heading">
+        <h2>Popular Destination</h2>
+        <p>We are self-service data analytics software that lets you create visually appealing data visualizations and insightful dashboards in minutes.</p>
+      </div>
+
+      <div class="popular_slider">
+        <div class="slide_item">
+          <div class="popular_item">
+            <div class="image">
+              <img class="img-fluid" src="./images/popular-3.jpg" alt="image">
+            </div>
+            <div class="text">
+              <div class="stars">
+                <i class="fa-solid fa-star select"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5 Review</span>
+              </div>
+              <h3>Paris, France</h3>
+              <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam</p>
+              <div class="dollar">
+                <b>$150</b> / <span>Person</span>
+              </div>
+              <a href="#">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide_item">
+          <div class="popular_item">
+            <div class="image">
+              <img class="img-fluid" src="./images/popular-3.jpg" alt="image">
+            </div>
+            <div class="text">
+              <div class="stars">
+                <i class="fa-solid fa-star select"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5 Review</span>
+              </div>
+              <h3>Paris, France</h3>
+              <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam</p>
+              <div class="dollar">
+                <b>$150</b> / <span>Person</span>
+              </div>
+              <a href="#">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide_item">
+          <div class="popular_item">
+            <div class="image">
+              <img class="img-fluid" src="./images/popular-3.jpg" alt="image">
+            </div>
+            <div class="text">
+              <div class="stars">
+                <i class="fa-solid fa-star select"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5 Review</span>
+              </div>
+              <h3>Paris, France</h3>
+              <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam</p>
+              <div class="dollar">
+                <b>$150</b> / <span>Person</span>
+              </div>
+              <a href="#">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide_item">
+          <div class="popular_item">
+            <div class="image">
+              <img class="img-fluid" src="./images/popular-3.jpg" alt="image">
+            </div>
+            <div class="text">
+              <div class="stars">
+                <i class="fa-solid fa-star select"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5 Review</span>
+              </div>
+              <h3>Paris, France</h3>
+              <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam</p>
+              <div class="dollar">
+                <b>$150</b> / <span>Person</span>
+              </div>
+              <a href="#">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide_item">
+          <div class="popular_item">
+            <div class="image">
+              <img class="img-fluid" src="./images/popular-3.jpg" alt="image">
+            </div>
+            <div class="text">
+              <div class="stars">
+                <i class="fa-solid fa-star select"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5 Review</span>
+              </div>
+              <h3>Paris, France</h3>
+              <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam</p>
+              <div class="dollar">
+                <b>$150</b> / <span>Person</span>
+              </div>
+              <a href="#">Book Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="slide_item">
+          <div class="popular_item">
+            <div class="image">
+              <img class="img-fluid" src="./images/popular-3.jpg" alt="image">
+            </div>
+            <div class="text">
+              <div class="stars">
+                <i class="fa-solid fa-star select"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>5 Review</span>
+              </div>
+              <h3>Paris, France</h3>
+              <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam</p>
+              <div class="dollar">
+                <b>$150</b> / <span>Person</span>
+              </div>
+              <a href="#">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <!-- Popular part end -->
+
+    <!-- go_travels part start -->
+    <section id="go_travels">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="go_travel_left">
+              <div class="common_heading">
+                <h2>Go Travel, Discover Remember Us</h2>
+                <p>We are self-service data analytics software that lets 
+                  you create visually appealing data visualizations and insightful dashboards in minutes.</p>
+              </div>
+              <ul>
+                <li>
+                  <span class="icon">
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L5 11L15 1" stroke="#007F5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <span class="text">We are self-service data software visually 
+                    appealing data visualizations.</span>
+                </li>
+                <li>
+                  <span class="icon">
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L5 11L15 1" stroke="#007F5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <span class="text">We are self-service data software visually 
+                    appealing data visualizations.</span>
+                </li>
+                <li>
+                  <span class="icon">
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L5 11L15 1" stroke="#007F5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  <span class="text">We are self-service data software visually 
+                    appealing data visualizations.</span>
+                </li>
+              </ul>
+              <a class="common_btn" href="#">Discover Place</a>
+            </div>
+          </div>
+          <div class="col-lg-6 ps-lg-5">
+            <div class="go_travel_right">
+              <div class="item">
+                <div class="icon">
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_41_323)">
+                    <path d="M25.2997 32.4321H24.2904V30.2789H10.1602V32.4321H9.1509C8.59303 32.4321 8.1416 32.8835 8.1416 33.4414C8.1416 33.9993 8.59303 34.4507 9.1509 34.4507H25.2997C25.8575 34.4507 26.309 33.9993 26.309 33.4414C26.309 32.8835 25.8575 32.4321 25.2997 32.4321Z" fill="#007F5F"/>
+                    <path d="M17.3682 8.0951L17.2253 7.80927L17.0883 8.08326C16.8396 8.59531 16.3361 8.63541 16.3294 8.64214L16.012 8.68944L16.2298 8.90429C16.4688 9.13192 16.5865 9.47521 16.5255 9.81111L16.4752 10.1156L16.7601 9.96782C17.046 9.81905 17.3954 9.81434 17.6905 9.96782L17.9753 10.1156L17.9231 9.79926C17.8689 9.47501 17.9763 9.14477 18.2099 8.91512L18.4386 8.68944L18.1212 8.64214C17.7959 8.59282 17.5151 8.3888 17.3682 8.0951Z" fill="#007F5F"/>
+                    <path d="M33.4414 2.01859H28.3061C28.3146 1.68297 28.3276 1.35084 28.3276 1.0093C28.3276 0.451425 27.8762 0 27.3183 0H7.13237C6.5745 0 6.12307 0.451425 6.12307 1.0093C6.12307 1.35084 6.13612 1.6831 6.14454 2.01859H1.0093C0.451425 2.01859 0 2.47002 0 3.02789V5.58464C0 11.2193 4.51291 15.7964 10.0751 16.0924C11.2351 17.6879 12.6164 18.8724 14.1798 19.5452C13.9504 24.1507 11.5069 27.3404 10.7165 28.2603H23.7326C22.9424 27.3468 20.4994 24.176 20.2701 19.5452C21.8339 18.8726 23.2158 17.6882 24.3759 16.0924C29.9378 15.7962 34.4507 11.2192 34.4507 5.58464V3.02789C34.4507 2.47002 33.9993 2.01859 33.4414 2.01859ZM2.01859 5.58464V4.03719H6.24506C6.54617 7.88254 7.42103 11.2538 8.75821 13.9087C4.9467 13.0504 2.01859 9.65178 2.01859 5.58464ZM21.2941 8.7101L20 9.98451L20.2976 11.7764C20.3608 12.1539 20.205 12.5344 19.8955 12.7581C19.585 12.9836 19.1769 13.0137 18.8369 12.838L17.2253 12.0011L15.6138 12.838C15.2728 13.0115 14.8647 12.9829 14.5553 12.7581C14.2458 12.5344 14.0901 12.154 14.1531 11.7764L14.4508 9.98451L13.1567 8.7101C12.879 8.43658 12.7897 8.03293 12.9053 7.67914C13.0236 7.3164 13.3371 7.05028 13.7155 6.99315L15.5114 6.72306L16.3226 5.09971C16.6636 4.41568 17.7873 4.41568 18.1283 5.09971L18.9395 6.72306L20.7353 6.99315C21.1138 7.05034 21.4272 7.31646 21.5455 7.67914C21.6637 8.04282 21.5661 8.44203 21.2941 8.7101ZM32.4321 5.58464C32.4321 9.65164 29.504 13.0503 25.6926 13.9085C27.0297 11.2537 27.9047 7.88268 28.2056 4.03719H32.4321V5.58464Z" fill="#007F5F"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_41_323">
+                    <rect width="34.4507" height="34.4507" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>                    
+                </div>
+                <div class="text">
+                  <h3><span>500</span>K+</h3>
+                  <p>Satisfied Clients</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_41_323)">
+                    <path d="M25.2997 32.4321H24.2904V30.2789H10.1602V32.4321H9.1509C8.59303 32.4321 8.1416 32.8835 8.1416 33.4414C8.1416 33.9993 8.59303 34.4507 9.1509 34.4507H25.2997C25.8575 34.4507 26.309 33.9993 26.309 33.4414C26.309 32.8835 25.8575 32.4321 25.2997 32.4321Z" fill="#007F5F"/>
+                    <path d="M17.3682 8.0951L17.2253 7.80927L17.0883 8.08326C16.8396 8.59531 16.3361 8.63541 16.3294 8.64214L16.012 8.68944L16.2298 8.90429C16.4688 9.13192 16.5865 9.47521 16.5255 9.81111L16.4752 10.1156L16.7601 9.96782C17.046 9.81905 17.3954 9.81434 17.6905 9.96782L17.9753 10.1156L17.9231 9.79926C17.8689 9.47501 17.9763 9.14477 18.2099 8.91512L18.4386 8.68944L18.1212 8.64214C17.7959 8.59282 17.5151 8.3888 17.3682 8.0951Z" fill="#007F5F"/>
+                    <path d="M33.4414 2.01859H28.3061C28.3146 1.68297 28.3276 1.35084 28.3276 1.0093C28.3276 0.451425 27.8762 0 27.3183 0H7.13237C6.5745 0 6.12307 0.451425 6.12307 1.0093C6.12307 1.35084 6.13612 1.6831 6.14454 2.01859H1.0093C0.451425 2.01859 0 2.47002 0 3.02789V5.58464C0 11.2193 4.51291 15.7964 10.0751 16.0924C11.2351 17.6879 12.6164 18.8724 14.1798 19.5452C13.9504 24.1507 11.5069 27.3404 10.7165 28.2603H23.7326C22.9424 27.3468 20.4994 24.176 20.2701 19.5452C21.8339 18.8726 23.2158 17.6882 24.3759 16.0924C29.9378 15.7962 34.4507 11.2192 34.4507 5.58464V3.02789C34.4507 2.47002 33.9993 2.01859 33.4414 2.01859ZM2.01859 5.58464V4.03719H6.24506C6.54617 7.88254 7.42103 11.2538 8.75821 13.9087C4.9467 13.0504 2.01859 9.65178 2.01859 5.58464ZM21.2941 8.7101L20 9.98451L20.2976 11.7764C20.3608 12.1539 20.205 12.5344 19.8955 12.7581C19.585 12.9836 19.1769 13.0137 18.8369 12.838L17.2253 12.0011L15.6138 12.838C15.2728 13.0115 14.8647 12.9829 14.5553 12.7581C14.2458 12.5344 14.0901 12.154 14.1531 11.7764L14.4508 9.98451L13.1567 8.7101C12.879 8.43658 12.7897 8.03293 12.9053 7.67914C13.0236 7.3164 13.3371 7.05028 13.7155 6.99315L15.5114 6.72306L16.3226 5.09971C16.6636 4.41568 17.7873 4.41568 18.1283 5.09971L18.9395 6.72306L20.7353 6.99315C21.1138 7.05034 21.4272 7.31646 21.5455 7.67914C21.6637 8.04282 21.5661 8.44203 21.2941 8.7101ZM32.4321 5.58464C32.4321 9.65164 29.504 13.0503 25.6926 13.9085C27.0297 11.2537 27.9047 7.88268 28.2056 4.03719H32.4321V5.58464Z" fill="#007F5F"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_41_323">
+                    <rect width="34.4507" height="34.4507" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>                    
+                </div>
+                <div class="text">
+                  <h3><span>500</span>K+</h3>
+                  <p>Satisfied Clients</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_41_323)">
+                    <path d="M25.2997 32.4321H24.2904V30.2789H10.1602V32.4321H9.1509C8.59303 32.4321 8.1416 32.8835 8.1416 33.4414C8.1416 33.9993 8.59303 34.4507 9.1509 34.4507H25.2997C25.8575 34.4507 26.309 33.9993 26.309 33.4414C26.309 32.8835 25.8575 32.4321 25.2997 32.4321Z" fill="#007F5F"/>
+                    <path d="M17.3682 8.0951L17.2253 7.80927L17.0883 8.08326C16.8396 8.59531 16.3361 8.63541 16.3294 8.64214L16.012 8.68944L16.2298 8.90429C16.4688 9.13192 16.5865 9.47521 16.5255 9.81111L16.4752 10.1156L16.7601 9.96782C17.046 9.81905 17.3954 9.81434 17.6905 9.96782L17.9753 10.1156L17.9231 9.79926C17.8689 9.47501 17.9763 9.14477 18.2099 8.91512L18.4386 8.68944L18.1212 8.64214C17.7959 8.59282 17.5151 8.3888 17.3682 8.0951Z" fill="#007F5F"/>
+                    <path d="M33.4414 2.01859H28.3061C28.3146 1.68297 28.3276 1.35084 28.3276 1.0093C28.3276 0.451425 27.8762 0 27.3183 0H7.13237C6.5745 0 6.12307 0.451425 6.12307 1.0093C6.12307 1.35084 6.13612 1.6831 6.14454 2.01859H1.0093C0.451425 2.01859 0 2.47002 0 3.02789V5.58464C0 11.2193 4.51291 15.7964 10.0751 16.0924C11.2351 17.6879 12.6164 18.8724 14.1798 19.5452C13.9504 24.1507 11.5069 27.3404 10.7165 28.2603H23.7326C22.9424 27.3468 20.4994 24.176 20.2701 19.5452C21.8339 18.8726 23.2158 17.6882 24.3759 16.0924C29.9378 15.7962 34.4507 11.2192 34.4507 5.58464V3.02789C34.4507 2.47002 33.9993 2.01859 33.4414 2.01859ZM2.01859 5.58464V4.03719H6.24506C6.54617 7.88254 7.42103 11.2538 8.75821 13.9087C4.9467 13.0504 2.01859 9.65178 2.01859 5.58464ZM21.2941 8.7101L20 9.98451L20.2976 11.7764C20.3608 12.1539 20.205 12.5344 19.8955 12.7581C19.585 12.9836 19.1769 13.0137 18.8369 12.838L17.2253 12.0011L15.6138 12.838C15.2728 13.0115 14.8647 12.9829 14.5553 12.7581C14.2458 12.5344 14.0901 12.154 14.1531 11.7764L14.4508 9.98451L13.1567 8.7101C12.879 8.43658 12.7897 8.03293 12.9053 7.67914C13.0236 7.3164 13.3371 7.05028 13.7155 6.99315L15.5114 6.72306L16.3226 5.09971C16.6636 4.41568 17.7873 4.41568 18.1283 5.09971L18.9395 6.72306L20.7353 6.99315C21.1138 7.05034 21.4272 7.31646 21.5455 7.67914C21.6637 8.04282 21.5661 8.44203 21.2941 8.7101ZM32.4321 5.58464C32.4321 9.65164 29.504 13.0503 25.6926 13.9085C27.0297 11.2537 27.9047 7.88268 28.2056 4.03719H32.4321V5.58464Z" fill="#007F5F"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_41_323">
+                    <rect width="34.4507" height="34.4507" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>                    
+                </div>
+                <div class="text">
+                  <h3><span>500</span>K+</h3>
+                  <p>Satisfied Clients</p>
+                </div>
+              </div>
+              <div class="item">
+                <div class="icon">
+                  <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_41_323)">
+                    <path d="M25.2997 32.4321H24.2904V30.2789H10.1602V32.4321H9.1509C8.59303 32.4321 8.1416 32.8835 8.1416 33.4414C8.1416 33.9993 8.59303 34.4507 9.1509 34.4507H25.2997C25.8575 34.4507 26.309 33.9993 26.309 33.4414C26.309 32.8835 25.8575 32.4321 25.2997 32.4321Z" fill="#007F5F"/>
+                    <path d="M17.3682 8.0951L17.2253 7.80927L17.0883 8.08326C16.8396 8.59531 16.3361 8.63541 16.3294 8.64214L16.012 8.68944L16.2298 8.90429C16.4688 9.13192 16.5865 9.47521 16.5255 9.81111L16.4752 10.1156L16.7601 9.96782C17.046 9.81905 17.3954 9.81434 17.6905 9.96782L17.9753 10.1156L17.9231 9.79926C17.8689 9.47501 17.9763 9.14477 18.2099 8.91512L18.4386 8.68944L18.1212 8.64214C17.7959 8.59282 17.5151 8.3888 17.3682 8.0951Z" fill="#007F5F"/>
+                    <path d="M33.4414 2.01859H28.3061C28.3146 1.68297 28.3276 1.35084 28.3276 1.0093C28.3276 0.451425 27.8762 0 27.3183 0H7.13237C6.5745 0 6.12307 0.451425 6.12307 1.0093C6.12307 1.35084 6.13612 1.6831 6.14454 2.01859H1.0093C0.451425 2.01859 0 2.47002 0 3.02789V5.58464C0 11.2193 4.51291 15.7964 10.0751 16.0924C11.2351 17.6879 12.6164 18.8724 14.1798 19.5452C13.9504 24.1507 11.5069 27.3404 10.7165 28.2603H23.7326C22.9424 27.3468 20.4994 24.176 20.2701 19.5452C21.8339 18.8726 23.2158 17.6882 24.3759 16.0924C29.9378 15.7962 34.4507 11.2192 34.4507 5.58464V3.02789C34.4507 2.47002 33.9993 2.01859 33.4414 2.01859ZM2.01859 5.58464V4.03719H6.24506C6.54617 7.88254 7.42103 11.2538 8.75821 13.9087C4.9467 13.0504 2.01859 9.65178 2.01859 5.58464ZM21.2941 8.7101L20 9.98451L20.2976 11.7764C20.3608 12.1539 20.205 12.5344 19.8955 12.7581C19.585 12.9836 19.1769 13.0137 18.8369 12.838L17.2253 12.0011L15.6138 12.838C15.2728 13.0115 14.8647 12.9829 14.5553 12.7581C14.2458 12.5344 14.0901 12.154 14.1531 11.7764L14.4508 9.98451L13.1567 8.7101C12.879 8.43658 12.7897 8.03293 12.9053 7.67914C13.0236 7.3164 13.3371 7.05028 13.7155 6.99315L15.5114 6.72306L16.3226 5.09971C16.6636 4.41568 17.7873 4.41568 18.1283 5.09971L18.9395 6.72306L20.7353 6.99315C21.1138 7.05034 21.4272 7.31646 21.5455 7.67914C21.6637 8.04282 21.5661 8.44203 21.2941 8.7101ZM32.4321 5.58464C32.4321 9.65164 29.504 13.0503 25.6926 13.9085C27.0297 11.2537 27.9047 7.88268 28.2056 4.03719H32.4321V5.58464Z" fill="#007F5F"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_41_323">
+                    <rect width="34.4507" height="34.4507" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>                    
+                </div>
+                <div class="text">
+                  <h3><span>500</span>K+</h3>
+                  <p>Satisfied Clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- go_travels part end -->
+
+    <!-- Destination part start -->
+    <section id="destination">
+      <div class="container">
+        <!-- 01 -->
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="destination_text">
+              <div class="common_heading">
+                <h2>We have more than 1000 selected Destination</h2>
+                <p>You can choose one of many option that we have on our website. Every destination have been 4+ star rated by our user before. You can search by clicking our button on below of the this text man.</p>
+              </div>
+                <a class="common_btn d-none d-lg-inline-block" href="#">Search Destination</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="destination_image">
+              <div class="img_1">
+                <img class="img-fluid" src="images/01.png" alt="image">
+              </div>
+              <div class="img_2">
+                <img class="img-fluid" src="images/02.png" alt="image">
+              </div>
+              <div class="dots">
+                <img class="img-fluid" src="images/dots.png" alt="image">
+              </div>
+              <div class="text">
+                <div class="search">
+                  <button>
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.7266 17.8047L15.8203 13.8984C15.625 13.7422 15.3906 13.625 15.1562 13.625H14.5312C15.5859 12.2578 16.25 10.5391 16.25 8.625C16.25 4.17188 12.5781 0.5 8.125 0.5C3.63281 0.5 0 4.17188 0 8.625C0 13.1172 3.63281 16.75 8.125 16.75C10 16.75 11.7188 16.125 13.125 15.0312V15.6953C13.125 15.9297 13.2031 16.1641 13.3984 16.3594L17.2656 20.2266C17.6562 20.6172 18.2422 20.6172 18.5938 20.2266L19.6875 19.1328C20.0781 18.7812 20.0781 18.1953 19.7266 17.8047ZM8.125 13.625C5.35156 13.625 3.125 11.3984 3.125 8.625C3.125 5.89062 5.35156 3.625 8.125 3.625C10.8594 3.625 13.125 5.89062 13.125 8.625C13.125 11.3984 10.8594 13.625 8.125 13.625Z" fill="#007F5F"/>
+                      </svg>
+                  </button>
+                  <input class="destination" type="text" placeholder="Recommended Destination">
+                </div>
+                <ul class="list_item">
+                  <li>
+                    <span>Venice, Italy</span>
+                    <span>
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L5 11L15 1" stroke="#007F5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </li>
+                  <li>
+                    <span>Venice, Italy</span>
+                    <span>
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L5 11L15 1" stroke="#007F5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </li>
+                  <li>
+                    <span>Venice, Italy</span>
+                    <span>
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L5 11L15 1" stroke="#007F5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </li>
+                </ul>
+                <a class="common_btn d-lg-none" href="#">Search Destination</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 02 -->
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="destination_text">
+              <div class="common_heading">
+                <h2>We have more than 1000 selected Destination</h2>
+                <p>You can choose one of many option that we have on our website. Every destination have been 4+ star rated by our user before. You can search by clicking our button on below of the this text man.</p>
+                </div>
+                <a class="common_btn" href="#">Search Destination</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="destination_image">
+              <div class="img_1">
+                <img class="img-fluid" src="images/01.png" alt="image">
+              </div>
+              <div class="img_2">
+                <img class="img-fluid" src="images/02.png" alt="image">
+              </div>
+              <div class="dots">
+                <img class="img-fluid" src="images/dots.png" alt="image">
+              </div>
+              <div class="text">
+                <div class="search">
+                  <button>
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.7266 17.8047L15.8203 13.8984C15.625 13.7422 15.3906 13.625 15.1562 13.625H14.5312C15.5859 12.2578 16.25 10.5391 16.25 8.625C16.25 4.17188 12.5781 0.5 8.125 0.5C3.63281 0.5 0 4.17188 0 8.625C0 13.1172 3.63281 16.75 8.125 16.75C10 16.75 11.7188 16.125 13.125 15.0312V15.6953C13.125 15.9297 13.2031 16.1641 13.3984 16.3594L17.2656 20.2266C17.6562 20.6172 18.2422 20.6172 18.5938 20.2266L19.6875 19.1328C20.0781 18.7812 20.0781 18.1953 19.7266 17.8047ZM8.125 13.625C5.35156 13.625 3.125 11.3984 3.125 8.625C3.125 5.89062 5.35156 3.625 8.125 3.625C10.8594 3.625 13.125 5.89062 13.125 8.625C13.125 11.3984 10.8594 13.625 8.125 13.625Z" fill="#007F5F"/>
+                      </svg>
+                  </button>
+                  <input class="destination" type="text" placeholder="Recommended Destination">
+                </div>
+                <ul class="list_item">
+                  <li>
+                    <span>Venice, Italy</span>
+                    <span>
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L5 11L15 1" stroke="#007F5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </li>
+                  <li>
+                    <span>Venice, Italy</span>
+                    <span>
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L5 11L15 1" stroke="#007F5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </li>
+                  <li>
+                    <span>Venice, Italy</span>
+                    <span>
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L5 11L15 1" stroke="#007F5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 03 -->
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="destination_text">
+              <div class="common_heading">
+                <h2>We have more than 1000 selected Destination</h2>
+                <p>You can choose one of many option that we have on our website. Every destination have been 4+ star rated by our user before. You can search by clicking our button on below of the this text man.</p>
+                </div>
+                <a class="common_btn" href="#">Search Destination</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="destination_image">
+              <div class="img_1">
+                <img class="img-fluid" src="images/01.png" alt="image">
+              </div>
+              <div class="img_2">
+                <img class="img-fluid" src="images/02.png" alt="image">
+              </div>
+              <div class="dots">
+                <img class="img-fluid" src="images/dots.png" alt="image">
+              </div>
+              <div class="text">
+                <div class="search">
+                  <button>
+                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19.7266 17.8047L15.8203 13.8984C15.625 13.7422 15.3906 13.625 15.1562 13.625H14.5312C15.5859 12.2578 16.25 10.5391 16.25 8.625C16.25 4.17188 12.5781 0.5 8.125 0.5C3.63281 0.5 0 4.17188 0 8.625C0 13.1172 3.63281 16.75 8.125 16.75C10 16.75 11.7188 16.125 13.125 15.0312V15.6953C13.125 15.9297 13.2031 16.1641 13.3984 16.3594L17.2656 20.2266C17.6562 20.6172 18.2422 20.6172 18.5938 20.2266L19.6875 19.1328C20.0781 18.7812 20.0781 18.1953 19.7266 17.8047ZM8.125 13.625C5.35156 13.625 3.125 11.3984 3.125 8.625C3.125 5.89062 5.35156 3.625 8.125 3.625C10.8594 3.625 13.125 5.89062 13.125 8.625C13.125 11.3984 10.8594 13.625 8.125 13.625Z" fill="#007F5F"/>
+                      </svg>
+                  </button>
+                  <input class="destination" type="text" placeholder="Recommended Destination">
+                </div>
+                <ul class="list_item">
+                  <li>
+                    <span>Venice, Italy</span>
+                    <span>
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L5 11L15 1" stroke="#007F5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </li>
+                  <li>
+                    <span>Venice, Italy</span>
+                    <span>
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L5 11L15 1" stroke="#007F5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </li>
+                  <li>
+                    <span>Venice, Italy</span>
+                    <span>
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 7L5 11L15 1" stroke="#007F5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Destination part end -->
+  
+
+      
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

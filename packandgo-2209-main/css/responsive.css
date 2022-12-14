@@ -1,0 +1,332 @@
+:root {
+    --primary-color: #007F5F;
+    --white-color: #ffffff;
+    --heading-color: #1E1E1E;
+    --paragraph-color: #616161;
+    --review-color: #FF8B00;
+    --ff1: 'Poppins', sans-serif;
+    --nunito: 'Nunito Sans', sans-serif;
+    --box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    --primary-opacity-color: rgba(0, 127, 95, 0.1);
+    ;
+}
+
+@media (max-width:991.98px) {
+
+    /* Common css start */
+    h3 {
+        font-size: 20px !important;
+    }
+
+    .common_heading h2 {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .common_heading p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    /* Common css end */
+    #navbar {
+        padding: 5px 0;
+        background: #fff;
+    }
+
+    .navbar-brand {
+        width: 150px;
+    }
+
+    .navbar-toggler[aria-expanded="false"] {
+        border: none;
+        box-shadow: none;
+        color: var(--heading-color);
+    }
+
+    .navbar-toggler[aria-expanded="true"] {
+        border: none;
+        box-shadow: none;
+        color: var(--primary-color);
+    }
+
+    /* Banner part start */
+    .search_box {
+        flex-direction: column;
+    }
+
+    /* Banner part end */
+}
+
+
+@media (max-width: 575.98px) {
+
+    /* Common css start */
+    h3 {
+        font-size: 20px !important;
+    }
+
+    .common_heading h2 {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .common_heading p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    /* Common css end */
+    .navbar-brand {
+        width: 122px;
+    }
+
+    /* Banner part start */
+    #banner .banner_info h1 {
+        font-size: 30px;
+        line-height: 45px;
+        padding-right: 0;
+    }
+
+    #banner .banner_info p {
+        padding-right: 0;
+    }
+
+    #banner .overlay {
+        padding-top: 35px;
+    }
+
+    .search_box {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .search_box .item {
+        width: auto;
+    }
+
+    .search_box .item:last-child {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .search_box .item button {
+        border-radius: 5px;
+        padding: 10px;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Banner part end */
+
+    /* travel_benefit start======== */
+    #travel_benefit {
+        padding-top: 60px;
+    }
+
+    #travel_benefit .common_heading {
+        padding-bottom: 50px;
+    }
+
+    .benefit_item {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .benefit_item .info {
+        padding-right: 0;
+    }
+
+    .benefit_item .info h3 {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    /* travel_benefit end========== */
+
+
+    /* popular end========== */
+    #popular {
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+
+    /* popular end========== */
+
+    /* go_travels end========== */
+    #go_travels {
+        padding: 60px 0;
+    }
+
+    #go_travels .common_heading {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .go_travel_left ul li .text {
+        padding-right: 0;
+    }
+
+    .go_travel_left {
+        padding-bottom: 40px;
+    }
+
+    .go_travel_right .item {
+        padding: 20px 30px;
+        width: 100%;
+    }
+
+    .go_travel_right .item .text h3 {
+        line-height: 1;
+    }
+
+    .go_travel_right .item .text p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+
+    /* go_travels end========== */
+
+    /* destination end========== */
+    #destination {
+        padding: 10px;
+    }
+
+    .destination_image {
+        width: 221px;
+        height: 395px;
+    }
+
+    .destination_image .img_2 {
+        right: -68px;
+        bottom: 75px;
+        width: 100%;
+    }
+
+    .destination_image .text {
+        width: 111%;
+    }
+
+    .destination_image .text .search {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    .destination_image .text ul li {
+        padding-left: 39px;
+        font-size: 14px;
+    }
+
+    .destination_text {
+        padding-bottom: 40px;
+    }
+
+    .destination_image .text .search input {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    /* destination end========== */
+
+}
+
+
+@media (max-width:385.98px) {
+    .destination_image .img_2 {
+        right: -52px;
+        bottom: 108px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .common_heading{
+        padding: 0 30px!important;
+        text-align: center;
+    }
+    #banner .banner_info h1 {
+        font-size: 40px;
+        line-height: 1.5;
+        padding-right: 0;
+    }
+
+    #banner .banner_info p {
+        padding-right: 0;
+    }
+
+    #banner .overlay {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .search_box .item {
+        width: 100%;
+    }
+
+
+    .search_box .item {
+        justify-content: center !important;
+    }
+    .search_box .item button {
+        padding: 19px;
+        width: 50%;
+    }
+    #travel_benefit {
+        padding-top: 60px;
+    }
+    .benefit_item {
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .benefit_item .info {
+        padding-right: 0;
+    }
+    .benefit_item .info h3 {
+        padding-top: 25px;
+    }
+    #popular {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    #go_travels {
+        padding: 60px 0;
+    }
+    #go_travels .common_heading {
+        padding: 0 30px;
+        text-align: center;
+    }
+    .go_travel_left ul li .text {
+        padding-right: 0;
+    }
+    .go_travel_left {
+        padding-bottom: 40px;
+    }
+    .go_travel_right .item {
+        width: 246px;
+        padding: 30px 20px;
+    }
+    .go_travel_right .item .text h3 {
+        line-height: 30px;
+    }
+    .go_travel_right .item .text p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #destination {
+        padding: 0;
+        padding-top: 60px;
+    }
+    .destination_image {
+        width: 533px;
+        height: 526px;
+    }
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
